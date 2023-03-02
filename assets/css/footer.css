@@ -1,0 +1,11 @@
+footer {
+  width: 100%;
+  height: 25vh;
+  background: #020024;
+}
+footer hr {
+  background: #fff;
+  width: 50%;
+  height: 2px;
+  margin: auto;
+}

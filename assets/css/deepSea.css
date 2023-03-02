@@ -1,0 +1,38 @@
+#seaKing {
+  height: 100vh;
+  background: linear-gradient(180deg, rgb(20, 20, 199) 0%, rgb(2, 0, 36) 100%);
+  display: block;
+  justify-content: center;
+}
+#seaKing .avertissement {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+}
+#seaKing form {
+  margin: 100px 35% 100px 35%;
+  padding: 10px;
+  border: 1px solid #000;
+  display: block;
+  justify-content: center;
+}
+#seaKing form label {
+  margin: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+#seaKing form #identifiant, #seaKing form #mdp {
+  width: 500px;
+  height: 50px;
+  margin: 20px;
+  background: #d4efff;
+  border-radius: 10px;
+}
+#seaKing form button {
+  width: 50%;
+  height: 25px;
+  margin: 20px 25%;
+  border-radius: 5px;
+}
