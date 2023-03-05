@@ -1,7 +1,8 @@
 <?php 
 
-namespace Modeles\Entites;
+namespace Modeles\Entities;
 class Comptes{
+    private $identifiant;
     private $mail;
     private $mdp;
     private $id;
@@ -61,7 +62,29 @@ class Comptes{
      */ 
     public function setId($id)
     {
-        $this->id = $id;
+        if(is_numeric($id)){
+            $this->id = $id;
+        }
+
+        return $this;
+    }
+
+    /**
+     * Get the value of identifiant
+     */ 
+    public function getIdentifiant()
+    {
+        return $this->identifiant;
+    }
+
+    /**
+     * Set the value of identifiant
+     *
+     * @return  self
+     */ 
+    public function setIdentifiant($identifiant)
+    {
+        $this->identifiant = $identifiant;
 
         return $this;
     }

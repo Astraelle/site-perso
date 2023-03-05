@@ -1,13 +1,35 @@
 <?php 
 
-namespace Modeles\Entites;
+namespace Modeles\Entities;
 class Contact{
+    private $id;
     private $nom;
     private $prenom;
     private $mail;
     private $sujet;
     private $demande;
-    private $id;
+    
+    /**
+     * Get the value of id
+     */ 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set the value of id
+     *
+     * @return  self
+     */ 
+    public function setId($id)
+    {
+        if(is_numeric($id)){
+            $this->id = $id;
+        }
+
+        return $this;
+    }
 
     /**
      * Get the value of nom
@@ -109,25 +131,7 @@ class Contact{
         return $this;
     }
 
-    /**
-     * Get the value of id
-     */ 
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Set the value of id
-     *
-     * @return  self
-     */ 
-    public function setId($id)
-    {
-        $this->id = $id;
-
-        return $this;
-    }
+    
 }
 
 ?>
