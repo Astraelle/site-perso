@@ -30,14 +30,6 @@ abstract class Bdd{
         return $pdostatement->execute();
     }
 
-    public static function updateComptes(Comptes $comptes){
-        $textRequete = "UPDATE comptes SET mail = :mail, mdp = :mdp";
-        $pdostatement = self::pdo()->prepare($textRequete);
-        $pdostatement->bindValue(":mail", $comptes->getMail());
-        $pdostatement->bindValue(":mdp", $comptes->getMdp());
-        return $pdostatement->execute();
-    }
-
     public static function deleteComptes(Comptes $comptes){
         return self::pdo()->exec("DELETE FROM comptes WHERE id = " . $comptes->getId());
     }
