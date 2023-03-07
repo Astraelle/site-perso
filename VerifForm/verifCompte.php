@@ -1,10 +1,13 @@
 <?php 
 
-use Connection\Bdd;
-include "seaKing/includes/functions.php";
+use VerifForm\Bdd;
+
+if(isset($_SESSION['id'])){
+    redirection("index.php");
+}
 
 // Vérification des champs
-if(isset($_POST['submit'])){
+if(isset($_POST['connexion'])){
     extract($_POST);
     $valid = true;
     $identifiant = trim($_POST['identifiant']);
@@ -54,12 +57,12 @@ if(isset($_POST['submit'])){
                 $valid = false;
                 $err_mdp = "Le mot de passe est incorrect";
             }
-            if(!($req['autorite'] == "Admin")){
-                $valid = false;
-                $err_autorite = "Vous n'avez pas l'autorisation nécessaire pour accéder à la page suivante";
-            }
             if($valid){
-                redirection("seaKing/");
+                $_SESSION['id'] = $req['id'];
+                $_SESSION['identifiant'] = $req['identifiant'];
+                $_SESSION['mail'] = $req['mail'];
+                $_SESSION['mdp'] = $req['mdp'];
+                redirection("index.php");
             }
         }else{
             $valid = false;

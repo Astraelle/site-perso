@@ -11,7 +11,11 @@ abstract class Bdd{
         return new \PDO("mysql:host=127.0.0.1:3306;dbname=projet_fil_rouge_b1dev", "root", "", [PDO::ATTR_ERRMODE => PDO::ERRMODE_SILENT]);
     }
 
-    public static function select(string $table){
+    public static function selectComptes(string $table){
+        $pdostatement = self::pdo()->query("SELECT * FROM $table WHERE id != 1");
+        return $pdostatement->fetchAll(PDO::FETCH_CLASS, "Modeles\Entities\\" . ucfirst($table));
+    }
+    public static function selectContacts(string $table){
         $pdostatement = self::pdo()->query("SELECT * FROM $table");
         return $pdostatement->fetchAll(PDO::FETCH_CLASS, "Modeles\Entities\\" . ucfirst($table));
     }

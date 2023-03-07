@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,11 +19,12 @@
             <input type="text" name="identifiant" value="<?php if(isset($identifiant)){echo $identifiant;} ?>" id="identifiant" placeholder="Votre identifiant"><br>
             <?php if(isset($err_identifiant)){echo '<p>' . $err_identifiant . '</p>';} ?>
             <label for="mail">Mail</label><br>
-            <input type="text" name="mail" id="mail" placeholder="Votre mail"><br>
+            <input type="text" name="mail" value="<?php if(isset($mail)){echo $mail;} ?>" id="mail" placeholder="Votre mail"><br>
             <?php if(isset($err_mail)){echo '<p>' . $err_mail . '</p>';} ?>
             <label for="mdp">Mot de passe</label><br>
             <input type="text" name="mdp" id="mdp" placeholder="Votre mot de passe"><br>
             <?php if(isset($err_mdp)){echo '<p>' . $err_mdp . '</p>';} ?>
+            <?php if(isset($err_autorite)){echo '<p>' . $err_autorite . '</p>';} ?>
             <button type="submit" name="submit">Se connecter</button>
         </form>
     </div>

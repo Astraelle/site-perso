@@ -7,7 +7,7 @@ use Modeles\Entities\Comptes;
 
 class CompteControleur{
     public function liste(){
-        $comptes = Bdd::select("comptes");
+        $comptes = Bdd::selectComptes("comptes");
 
         include "vue/header.php";
         include "vue/comptes/affichage.php";

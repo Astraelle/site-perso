@@ -1,0 +1,18 @@
+#comptes {
+  height: 100vh;
+  background: linear-gradient(180deg, rgb(20, 20, 199) 0%, rgb(2, 0, 36) 100%);
+}
+#comptes form {
+  width: 50%;
+  margin: auto;
+  padding-top: 200px;
+  display: block;
+  justify-content: center;
+}
+#comptes form label {
+  color: #fff;
+}
+#comptes form label #nom, #comptes form label #prenom, #comptes form label #mail, #comptes form label #sujet {
+  width: 500px;
+  height: 50px;
+}

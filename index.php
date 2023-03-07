@@ -1,7 +1,7 @@
 <?php include "header.php";?>
     <div id="home">
         <img src="assets/img/hero.jpg" alt="image d'accueil">
-        <p class="homeIntro">Charlie PIERRE <br>Développeur web débutant</p>
+        <p class="homeIntro"><?php if($_SESSION){echo 'Bienvenue ' . $_SESSION['identifiant'] . '<br>sur le site de <br>Charlie PIERRE';}else{echo 'Charlie PIERRE <br>Développeur web débutant';}?></p>
     </div>
     <main id="homeSea">
         <div id="prez">

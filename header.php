@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+    
+    include "VerifForm/session.php";
+
+    ?>
     <header>
         <a href="index.php"><img src="assets/img/logo_perso.png" alt="logo charlie pierre"></a>
         <nav>
@@ -22,6 +27,10 @@
                 </li>
                 <li>
                     <a href="contact.php">Me contacter</a>
+                </li>
+
+                <li>
+                    <a href="compte.php"><?php if($_SESSION){echo 'Se déconnecter';}else{echo 'Se connecter';} ?></a>
                 </li>
             </ul>
         </nav>

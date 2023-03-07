@@ -1,6 +1,6 @@
 #seaKing{
     height: 100vh;
-    background: linear-gradient(180deg, rgb(20, 20, 199) 0%, rgb(218, 218, 221) 100%);
+    background: linear-gradient(180deg, rgb(20, 20, 199) 0%, rgba(2,0,36,1) 100%);
     display: block;
     justify-content: center;
     .avertissement{
@@ -25,15 +25,24 @@
             width: 500px;
             height: 50px;
             margin: 20px;
-            background: #d4efff;
+            background: #d4efff00;
+            color: #fff;
             border-radius: 10px;
             font-size: 30px;
         }
+        input::placeholder{
+            color: #fff;
+        }
+        
         button{
             width: 50%;
             height: 25px;
             margin: 20px 25%;
             border-radius: 5px;
+        }
+        p{
+            color: #fff;
+            font-size: 20px;
         }
     }
 }

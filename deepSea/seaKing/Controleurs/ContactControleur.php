@@ -7,7 +7,7 @@ use Modeles\Entities\Contact;
 
 class ContactControleur{
     public function liste(){
-        $contacts = Bdd::select("contact");
+        $contacts = Bdd::selectContacts("contact");
 
         include "vue/header.php";
         include "vue/contacts/affichage.php";
