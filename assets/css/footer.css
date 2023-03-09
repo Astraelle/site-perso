@@ -9,3 +9,18 @@ footer hr {
   height: 2px;
   margin: auto;
 }
+footer #il {
+  display: flex;
+  justify-content: center;
+}
+footer #il ul {
+  align-items: center;
+}
+footer #il ul li {
+  list-style: none;
+  margin-top: 10px;
+}
+footer #il ul li a {
+  text-decoration: none;
+  color: #fff;
+}

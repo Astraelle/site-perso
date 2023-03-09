@@ -1,10 +1,11 @@
 #comptes {
   height: 100vh;
-  background: linear-gradient(180deg, rgb(20, 20, 199) 0%, rgb(2, 0, 36) 100%);
+  background: linear-gradient(180deg, rgb(0, 212, 255) 0, rgb(9, 9, 125) 93%, rgb(2, 0, 36) 100%);
 }
 #comptes form {
   width: 50%;
   margin: auto;
+  text-align: center;
   padding-top: 200px;
   display: block;
   justify-content: center;

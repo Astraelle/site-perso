@@ -28,3 +28,96 @@ header ul li a {
   text-decoration: none;
   color: #fff;
 }
+header button {
+  text-decoration: none;
+  color: #333;
+}
+header #burger-button {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  height: 50px;
+  width: 60px;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #000;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
+header #hamburger, header #content {
+  display: inline;
+}
+header #overlay {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3098039216);
+}
+header #sidebar {
+  width: 85%;
+  z-index: 11;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgb(0, 212, 255) 0, rgb(9, 9, 125) 93%, rgb(2, 0, 36) 100%);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+  display: none;
+  position: fixed;
+}
+header #sidebar li {
+  display: block;
+}
+header #hamburger-sidebar-header {
+  height: 150px;
+}
+header #hamburger-sidebar-body {
+  height: 500px;
+  padding-block: 15px;
+  padding-inline: 10px;
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  header #content {
+    display: none;
+  }
+  header #burger-button, header #sidebar, header .hamburger-activated #overlay {
+    display: block;
+  }
+  header #burger-button ul, header #sidebar ul, header .hamburger-activated #overlay ul {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  header #burger-button ul li, header #sidebar ul li, header .hamburger-activated #overlay ul li {
+    margin-top: 10px;
+  }
+  header #burger-button ul a, header #sidebar ul a, header .hamburger-activated #overlay ul a {
+    color: #ffffff;
+  }
+  header #burger-button #hamburger-sidebar-header, header #sidebar #hamburger-sidebar-header, header .hamburger-activated #overlay #hamburger-sidebar-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+  }
+  header #burger-button #hamburger-sidebar-body, header #sidebar #hamburger-sidebar-body, header .hamburger-activated #overlay #hamburger-sidebar-body {
+    font-size: 35px;
+  }
+  header .hamburger-activated #sidebar {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 720px) {
+  header #burger-button {
+    color: #fff;
+  }
+}

@@ -8,7 +8,7 @@
     include "VerifForm/verifContact.php";
 
     ?>
-
+    <p class="intro"> Vous voulez me laisser une impression ou me demander quelque chose ?<br>n'hésitez pas à me le faire savoir !</p>
     <form action="" method="post" enctype="multipart/form-data">
         <label for="nom">Nom</label><br>
         <input type="text" name="nom" value="<?php if(isset($nom)){echo $nom;} ?>" id="nom">
@@ -31,7 +31,7 @@
         <?php if(isset($err_demande)){echo '<p>' . $err_demande . '</p>';} ?>
         <?php if(isset($err_bdd)){echo '<p>' . $err_bdd . '</p>';} ?>
         <br>
-        <button type="submit" name="envoi">Envoyer la demande</button>
+        <button type="submit" name="envoi" id="envoi">Envoyer la demande</button>
     </form>
 </div>
 

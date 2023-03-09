@@ -25,8 +25,8 @@
         <input type="text" name="mdp" value="<?php if(isset($mdp)){echo $mdp;} ?>" id="mdp">
         <?php if(isset($err_mdp)){echo '<p>' .$err_mdp . '</p>';} ?>
         <br>
-        <button type="submit" name="connexion">Se connecter</button>
-        <a href="creation.php">Vous n'avez pas de compte ? Cliquez ici pour en créer un maintenant</a>
+        <button type="submit" name="connexion" id="connexion">Se connecter</button><br>
+        <a id="link" href="creation.php">Vous n'avez pas de compte ? Cliquez ici pour en créer un maintenant</a>
     </form>
 </div>
 

@@ -130,3 +130,106 @@
   width: 400px;
   height: 500px;
 }
+@media screen and (max-width: 1024px) {
+  #homeSea #prez .description h2 {
+    font-size: 25px;
+  }
+  #homeSea #prez .description p {
+    font-size: 20px;
+  }
+  #homeSea #prez .description hr {
+    margin: 15px 0 15px 0;
+  }
+  #homeSea #prez img {
+    width: 200px;
+    height: 250px;
+  }
+  #homeSea #projet .dev h2 {
+    font-size: 25px;
+  }
+  #homeSea #projet .dev p {
+    font-size: 20px;
+  }
+  #homeSea #projet .dev hr {
+    margin: 15px 0 15px 0;
+  }
+  #homeSea #projet img {
+    height: 200px;
+    width: 200px;
+  }
+  #homeSea #design .illustr h2 {
+    font-size: 25px;
+  }
+  #homeSea #design .illustr p {
+    font-size: 20px;
+  }
+  #homeSea #design .illustr hr {
+    margin: 15px 0 15px 0;
+  }
+  #homeSea #design img {
+    width: 200px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 720px) {
+  #homeSea #prez {
+    display: block;
+  }
+  #homeSea #prez .description {
+    width: 100%;
+    text-align: center;
+  }
+  #homeSea #prez .description h2 {
+    text-align: center;
+  }
+  #homeSea #prez .description hr {
+    margin: auto;
+  }
+  #homeSea #prez img {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+  }
+  #homeSea #projet {
+    display: block;
+  }
+  #homeSea #projet .dev {
+    width: 100%;
+    text-align: center;
+  }
+  #homeSea #projet .dev h2 {
+    text-align: center;
+  }
+  #homeSea #projet .dev hr {
+    margin: auto;
+  }
+  #homeSea #projet img {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+  }
+  #homeSea #design {
+    display: block;
+  }
+  #homeSea #design .illustr {
+    width: 100%;
+    text-align: center;
+  }
+  #homeSea #design .illustr h2 {
+    text-align: center;
+  }
+  #homeSea #design .illustr hr {
+    margin: auto;
+  }
+  #homeSea #design img {
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  #homeSea {
+    height: 20vh;
+  }
+}

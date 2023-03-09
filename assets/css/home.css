@@ -4,12 +4,18 @@
   background: #1d1d1d;
   position: relative;
 }
-#home img {
+#home .img1 {
   height: 100%;
   width: 100%;
   opacity: 85%;
 }
-#home p {
+#home .img2 {
+  height: 100%;
+  width: 100%;
+  opacity: 85%;
+  display: none;
+}
+#home .homeIntro {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -17,4 +23,17 @@
   font-size: 80px;
   text-align: center;
   color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  #home .homeIntro {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 720px) {
+  #home .img1 {
+    display: none;
+  }
+  #home .img2 {
+    display: block;
+  }
 }

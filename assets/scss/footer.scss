@@ -8,4 +8,19 @@ footer{
         height: 2px;
         margin: auto;
     }
+    #il{
+        display: flex;
+        justify-content: center;
+        ul{
+            align-items: center;
+            li{
+                list-style: none;
+                margin-top: 10px;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
 }

@@ -24,12 +24,13 @@
   color: #fff;
 }
 #seaKing form #identifiant, #seaKing form #mail, #seaKing form #mdp {
-  width: 500px;
+  width: 90%;
   height: 50px;
   margin: 20px;
   background: rgba(212, 239, 255, 0);
   color: #fff;
   border-radius: 10px;
+  border: 1px solid #fff;
   font-size: 30px;
 }
 #seaKing form input::-moz-placeholder {

@@ -1,18 +1,70 @@
 #contact{
-    height: 100vh;
-    background: linear-gradient(180deg, rgb(20, 20, 199) 0%, rgba(2,0,36,1) 100%);
-    form{
-        width: 50%;
+    height: 150vh;
+    background: linear-gradient(180deg, rgba(0,212,255,1) 0, rgba(9,9,125,1) 93%, rgba(2,0,36,1) 100%);
+    .intro{
+        width: 60%;
+        height: 150px;
         margin: auto;
-        padding-top: 200px;
+        padding-top: 150px;
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+    }
+    form{
+        width: 35%;
+        margin: 150px auto;
+        padding: 20px 5%;
+        text-align: center;
         display: block;
-        justify-content: center;
+        border: 1px solid #fff;
+        border-radius: 10px;
         label{
             color: #fff;
-        #nom, #prenom, #mail, #sujet{
-            width: 500px;
-            height: 50px;
-        }
+            margin-top: 50px;
         }
     }
+}
+#nom, #prenom, #mail, #sujet, #demande, #identifiant, #mdp{
+    margin: 5px 0 10px 0;
+    width: 90%;
+    height: 40px;
+    font-size: 25px;
+    color: #fff;
+    background: #00000000;
+    border: 1px solid #fff;
+    border-radius: 10px;
+
+}
+
+#demande{
+    height: 70px;
+    max-width: 100%;
+    max-height: 100px;
+}
+
+#envoi, #connexion, #creation{
+    width: 40%;
+    height: 30px;
+    margin: 0 25% 1% 25%;
+    background: rgba(0,212,255,1);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 25px;
+}
+
+#envoi{
+    width: 50%;
+    font-size: 20px;
+    height: 50px;
+}
+
+p{
+    color: #fff;
+}
+
+#link{
+    width: 100%;
+    color: #fff;
+    text-align: center;
 }

@@ -21,7 +21,7 @@
         <input type="text" name="mdp" value="<?php if(isset($mdp)){echo $mdp;} ?>" id="mdp">
         <?php if(isset($err_mdp)){echo '<p>' . $err_mdp . '</p>';} ?>
         <br>
-        <button type="submit" name="creation">Créer son compte</button>
+        <button type="submit" name="creation" id="creation">Créer son compte</button>
         <?php if(isset($err_bdd)){echo '<p>' . $err_bdd . '</p>';} ?>
     </form>
 </div>

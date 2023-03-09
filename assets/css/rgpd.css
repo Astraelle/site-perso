@@ -1,0 +1,21 @@
+#rgpd {
+  background: linear-gradient(180deg, rgb(0, 212, 255) 0, rgb(9, 9, 125) 93%, rgb(2, 0, 36) 100%);
+  display: block;
+}
+#rgpd .textRgpd {
+  width: 80%;
+  margin: auto;
+  padding-top: 150px;
+}
+#rgpd .textRgpd p {
+  margin-top: 10px;
+}
+#rgpd .textRgpd h2 {
+  color: #fff;
+}
+#rgpd .textRgpd ul li {
+  color: #fff;
+}
+#rgpd .textRgpd ul li a {
+  color: #fff;
+}

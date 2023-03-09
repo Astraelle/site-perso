@@ -1,0 +1,12 @@
+#mentions{
+    background: linear-gradient(180deg, rgba(0,212,255,1) 0, rgba(9,9,125,1) 93%, rgba(2,0,36,1) 100%);
+    display: block;
+    .text{
+        width: 80%;
+        margin: auto;
+        padding-top: 150px;
+        p{
+            margin-top: 10px;
+        }
+    }
+}

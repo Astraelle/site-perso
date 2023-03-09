@@ -129,5 +129,119 @@
             height: 500px;
         }
     }
+    @media screen and (max-width : 1024px){
+        #prez{
+            .description{
+                h2{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                hr{
+                    margin: 15px 0 15px 0;
+                }
+            }
+            img{
+                width: 200px;
+                height: 250px;
+            }
+        }
+        #projet{
+            .dev{
+                h2{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                hr{
+                    margin: 15px 0 15px 0;
+                }
+            }
+            img{
+                height: 200px;
+                width: 200px;
+            }
+        }
+        #design{
+            .illustr{
+                h2{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 20px;
+                }
+                hr{
+                    margin: 15px 0 15px 0;
+                }
+            }
+            img{
+                width: 200px;
+                height: 300px;
+            }
+        }
+    }
+    @media screen and (max-width : 720px){
+        #prez{
+            display: block;
+            .description{
+                width: 100%;
+                text-align: center;
+                h2{
+                    text-align: center;
+                }
+                hr{
+                    margin: auto;
+                }
+            }
+            img{
+                margin: 25px auto;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        #projet{
+            display: block;
+            .dev{
+                width: 100%;
+                text-align: center;
+                h2{
+                    text-align: center;
+                }
+                hr{
+                    margin: auto;
+                }
+            }
+            img{
+                margin: 25px auto;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        #design{
+            display: block;
+            .illustr{
+                width: 100%;
+                text-align: center;
+                h2{
+                    text-align: center;
+                }
+                hr{
+                    margin: auto;
+                }
+            }
+            img{
+                margin: 25px auto;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
 }
 
+@media screen and (max-width : 720px){
+    #homeSea{
+        height: 20vh;
+    }
+}

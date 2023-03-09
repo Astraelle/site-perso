@@ -1,1 +1,1 @@
-#perso{height:100vh;background:linear-gradient(180deg, rgb(20, 20, 199) 0%, rgb(2, 0, 36) 100%)}
+main{height:100vh;background:linear-gradient(180deg, rgb(0, 212, 255) 0, rgb(9, 9, 125) 93%, rgb(2, 0, 36) 100%)}main #presentation{width:80%;height:80vh;padding-top:5%;margin:auto;display:flex}main #presentation img{width:400px;height:500px}main #presentation p{width:60%;height:100px;padding:50px 0 0 80px;color:#fff;font-size:28px}

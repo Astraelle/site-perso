@@ -12,7 +12,7 @@
     form{
         margin: 100px 35% 100px 35%;
         padding: 10px;
-        border: 1px solid #ffffff;
+        border: 1px solid #ffffff;  
         display: block;
         justify-content: center;
         label{
@@ -22,12 +22,13 @@
             color: #fff;
         }
         #identifiant, #mail, #mdp{
-            width: 500px;
+            width: 90%;
             height: 50px;
             margin: 20px;
             background: #d4efff00;
             color: #fff;
             border-radius: 10px;
+            border: 1px solid #fff;
             font-size: 30px;
         }
         input::placeholder{
